@@ -8,10 +8,20 @@ const Card = ({ img }) => {
         className="card m-2"
         style={{
           width: "18rem",
-          height: "8rem"
+          height: "14rem",
         }}
       >
-        <img src={img} className="card-img-top" alt="imagen.jpg" />
+        <a href={img} target="_blank" rel="noopener noreferrer">
+          <img
+            src={img}
+            className="card-img-top"
+            alt="imagen.jpg"
+            style={{
+              width: "18rem",
+              height: "14rem",
+            }}
+          />
+        </a>
       </div>
     </div>
   );
